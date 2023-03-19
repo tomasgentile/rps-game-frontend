@@ -1,0 +1,81 @@
+.boardContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.actionsContainer {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.resultsContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.resultContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px;
+    height: 270px;
+    width: 40%;
+}
+
+.playerTitle {
+    text-align: center;
+    font-size: 2rem;
+    color: #ec3186;
+    text-shadow: 2px 2px 2px #3433E2;
+    font-family: 'Tourney';
+}
+
+.question {
+    text-align: center;
+    font-size: 6rem;
+    color: #f9ab20;
+    text-shadow: 2px 2px 2px #cdff00;
+}
+
+.winnerText {
+    margin-top: 60px;
+    text-align: center;
+    font-size: 2rem;
+    color: #ec3186;
+    font-family: 'Tourney';
+}
+
+.connection {
+    text-align: center;
+    font-size: large;
+    color: darkgreen;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.disconnected {
+    text-align: center;
+    font-size: large;
+    color: red;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+
+
+@media (max-width:900px) {
+    .question {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width:400px) {
+    .actionsContainer {
+        max-width: 360px;
+        padding: 5px;
+    }
+}

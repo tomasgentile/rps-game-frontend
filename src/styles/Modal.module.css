@@ -1,0 +1,120 @@
+.background {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100vw;
+    height: 100vh;
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal {
+    width: 250px;
+    height: 190px;
+    background: black;
+    color: white;
+    z-index: 10;
+    border-radius: 16px;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+    border: #45a1ff solid 3px;
+}
+
+.modalHeader {
+    height: 30px;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.heading {
+    margin: 0;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: #f9ab20;
+}
+
+.modalContent {
+    padding: 5px;
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    font-size: 18px;
+    color: #f9ab20;
+}
+
+.buttonsContainer {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    width: 88%;
+}
+
+.closeBtn {
+    cursor: pointer;
+    font-weight: 500;
+    padding: 4px 8px;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    color: #f9ab20;
+    background-color: black;
+    transition: all 0.25s ease;
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.06);
+    position: absolute;
+    right: 0;
+    top: 0;
+    align-self: flex-end;
+    margin-top: -15px;
+    margin-right: -15px;
+    border: #45a1ff solid 3px;
+}
+
+.closeBtn:hover {
+    box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+    transform: translate(-4px, 4px);
+}
+
+.closeBtn:active {
+    scale: 0.95;
+}
+
+.btn {
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 11px 26px;
+    border-radius: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    color: black;
+    background: #f9ab20;
+    transition: all 0.25s ease;
+}
+.btn:first-child {
+    margin-right: 12px;
+}
+
+.btn:hover {
+    box-shadow: 0 10px 20px -10px rgba(62, 133, 255, 0.6);
+    transform: translateY(-5px);
+}
+
+.btn:active {
+    scale: 0.95;
+}
+
+.message {
+    color: red;
+    font-weight: bold;
+}

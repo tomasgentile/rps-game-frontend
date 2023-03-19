@@ -1,0 +1,16 @@
+.exitcontainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
+.exitbutton {
+    padding: 10px;
+    color: #fcdd27;
+    margin: 0 50px;
+    background-color: black;
+    border: black;
+}
+.exitbutton:active {
+    scale: 0.98;
+}

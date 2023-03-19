@@ -1,0 +1,33 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    padding-top: 30px;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.presentationImg {
+    width: 380px;
+}
+
+.selectionBtn {
+    height: 200px;
+    width: 200px;
+    border: #ec3186 2px solid;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    opacity: 0.95;
+    background-color: black;
+}
+
+.selection:active {
+    scale: 0.98;
+}
+
+.neonText {
+    color: #ec3186;
+    font-weight: bold;
+    font-family: 'Tourney';
+}
