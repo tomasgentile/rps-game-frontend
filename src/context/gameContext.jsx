@@ -125,7 +125,8 @@ const GameProvider = ({ children }) => {
                 resetGame()
             })
             socket.on('sendingRejectedRematch', () => {
-                handleExitGame()
+                setWaitingRematch(false)
+                setPlayer2Disconnected(true)
             })
         }
         resetGame()

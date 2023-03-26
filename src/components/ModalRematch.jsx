@@ -14,6 +14,10 @@ const ModalRematch = () => {
         <div className={styles.background}>
             <div className={styles.centered}>
                 <div className={styles.modal}>
+                    <button
+                        className={styles.closeBtn}
+                        onClick={() => handleClose()}
+                    >x</button>
                     {!waitingRematch ?
                         <>
                             <div className={styles.modalHeader}>
@@ -31,10 +35,6 @@ const ModalRematch = () => {
                                     className={styles.btn}
                                     onClick={() => handleRejectedRematch()}
                                 >Cancel</button>
-                                <button
-                                    className={styles.closeBtn}
-                                    onClick={() => handleClose()}
-                                >x</button>
                             </div>
                         </>
                         :

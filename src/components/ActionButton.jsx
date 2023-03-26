@@ -10,7 +10,7 @@ const ActionButton = ({ handleClick, action }) => {
             <button
                 className={color}
                 onClick={() => handleClick(action)}>
-                <img src={imgSource} />
+                <img className={styles.actionBtnImage} src={imgSource} alt="action img" />
             </button>
         </div>
     )

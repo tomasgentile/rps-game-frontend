@@ -7,10 +7,10 @@ const Score = () => {
 
     const getIcon = (point) => {
         if (point == -1) {
-            return <img className={styles.imgResult} src='img/lose.png'/>
+            return <img className={styles.imgResult} src='img/lose.png' alt="win img"/>
         }
         if (point == 1) {
-            return <img className={styles.imgResult} src='img/win.png'/>
+            return <img className={styles.imgResult} src='img/win.png' alt="lose img"/>
         }
     }
 

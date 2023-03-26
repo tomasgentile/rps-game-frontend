@@ -38,7 +38,11 @@ const GameSelection = () => {
     return (
         <>
             <div className={styles.container}>
-                <img className={styles.presentationImg} src='img/presentation.png' />
+                <img
+                    className={styles.presentationImg}
+                    src='img/presentation.png'
+                    alt="presentation rock paper scissor"     
+                />
                 <button
                     className={styles.selectionBtn}
                     onClick={() => handleClick('computer')}>

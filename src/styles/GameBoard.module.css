@@ -50,6 +50,7 @@
 }
 
 .connection {
+    font-family: 'Tourney';
     text-align: center;
     font-size: large;
     color: darkgreen;
@@ -58,6 +59,7 @@
 }
 
 .disconnected {
+    font-family: 'Tourney';
     text-align: center;
     font-size: large;
     color: red;
@@ -65,17 +67,25 @@
     margin-top: 30px;
 }
 
-
-
-@media (max-width:900px) {
+@media (max-width:768px) {
     .question {
         font-size: 4rem;
     }
-}
-
-@media (max-width:400px) {
+    .resultContainer {
+        margin: 0px;
+    }
     .actionsContainer {
-        max-width: 360px;
-        padding: 5px;
+        margin-top: 25px;
+    }
+}
+@media (max-width:450px) {
+    .playerTitle {
+        font-size: 1.5rem;
+    }
+    .actionsContainer {
+        margin-top: 10px;
+    }
+    .resultContainer{
+        height: 55dvw;
     }
 }

@@ -19,6 +19,16 @@
 }
 @media (max-width:768px) {
     .scoreContainer {
-        width: 95%;
+        width: 90%;
+    }
+}
+@media (max-width:370px) {
+    .defaultIcon {
+        height: 18vw;
+        width: 18vw;
+    }
+    .imgResult {
+        height: 26vw;
+        width: 26vw;
     }
 }

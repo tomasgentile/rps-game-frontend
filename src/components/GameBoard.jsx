@@ -98,7 +98,9 @@ const GameBoard = () => {
     return (
         <div className={styles.boardContainer}>
             <ExitGame handleRestartClick={handleRestartClick} handleRefreshClick={handleRefreshClick} />
-            <Score remote={true} />
+            {
+                !player2Disconnected ? <Score remote={true} /> : null
+            }
             <div>
                 {winner.length > 0 ?
                     winner === 'Player' ?
@@ -113,7 +115,6 @@ const GameBoard = () => {
                             <div className={styles.resultsContainer}>
                                 <div className={styles.resultContainer}>
                                     <h1 className={styles.playerTitle}>Player</h1>
-
                                     {
                                         playerAction === 'notDefined' ?
                                             <h1 className={styles.question}>?</h1>
@@ -122,7 +123,6 @@ const GameBoard = () => {
                                                 action={playerAction}
                                             />
                                     }
-
                                 </div>
                                 <div className={styles.resultContainer}>
                                     <h1 className={styles.playerTitle}>Opponent</h1>

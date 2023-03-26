@@ -2,41 +2,66 @@
     display: flex;
     justify-content: center;
     padding: 8px;
-    margin: 4px;   
+    margin: 4px;
 }
+
 .actionButton:active {
     scale: 0.98;
 }
+
 .rock {
     border: 2px solid;
     border-color: #ff57c7;
     border-radius: 10px;
     background-color: black;
 }
+
 .paper {
     border: 2px solid;
     border-color: #45a1ff;
     border-radius: 10px;
     background-color: black;
 }
+
 .scissors {
     border: 2px solid;
     border-color: #f9ab20;
     border-radius: 10px;
     background-color: black;
 }
-img {
+
+.actionButton button {
+    height: 210px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.actionBtnImage {
     max-height: 200px;
 }
 
 @media (max-width:768px) {
-    .actionButton img{
+    .actionButton img {
         height: 155px;
+    }
+
+    .rock,
+    .paper,
+    .scissors {
+        height: 159px;
+        width: 113px;
     }
 }
 
-@media (max-width:400px) {
-    .actionButton img{
-        height: 125px;
+@media (max-width:500px) {
+    .actionButton img {
+        height: 30vw;
+    }
+
+    .actionButton button {
+        height: calc(30vw + 4px);
+        width: calc(23vw);
     }
 }
