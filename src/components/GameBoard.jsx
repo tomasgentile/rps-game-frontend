@@ -71,8 +71,8 @@ const GameBoard = () => {
     }
 
     const handleClick = (action) => {
-        setPlayerAction(action)
         if (!waiting) {
+            setPlayerAction(action)
             handlePlayerAction(action)
         }
     }

@@ -94,24 +94,23 @@ const GameProvider = ({ children }) => {
                 setOpponentPoints(prevPoints => prevPoints + 1)
             }
         }
-        setWaiting(false)
+        setTimeout(() => {
+            setWaiting(false)
+        }, 2000)
         setRemoteOpponentAction('notDefined')
     }
 
     const handlePlayerAction = (action) => {
+        setWaiting(true)
         if (gameType === 'computer') {
             const options = ['rock', 'paper', 'scissors']
             const computerChoice = options[Math.floor(Math.random() * options.length)]
             setRemoteOpponentAction(computerChoice)
-            setWaiting(true)
         } else {
             socket.emit('sending', {
                 action: action,
                 id: gameId
             })
-            if (remoteOpponentAcion === 'notDefined') {
-                setWaiting(true)
-            }
         }
     }
 
