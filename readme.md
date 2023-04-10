@@ -8,4 +8,4 @@ Game built with React and socket.io
   <img src="https://res.cloudinary.com/dmbcehw4r/image/upload/v1680216765/rps-presentation-img2_z8yvih.png" width="200" title="presentation-2">
 </p>
 
-https://thunderous-taiyaki-a183a0.netlify.app
+https://sensational-mousse-0c9f63.netlify.app
