@@ -7,10 +7,10 @@ const Score = () => {
 
     const getIcon = (point) => {
         if (point == -1) {
-            return <img className={styles.imgResult} src='img/lose.png' alt="win img"/>
+            return <img className={styles.imgResult} src='img/lose.png' alt="win img" />
         }
         if (point == 1) {
-            return <img className={styles.imgResult} src='img/win.png' alt="lose img"/>
+            return <img className={styles.imgResult} src='img/win.png' alt="lose img" />
         }
     }
 
@@ -18,9 +18,10 @@ const Score = () => {
 
     return (
         <div className={styles.scoreContainer}>
-            {scoreRemoteGame[0] ? getIcon(scoreRemoteGame[0]) : defaultIcon}
-            {scoreRemoteGame[1] ? getIcon(scoreRemoteGame[1]) : defaultIcon}
-            {scoreRemoteGame[2] ? getIcon(scoreRemoteGame[2]) : defaultIcon}
+            <div>{scoreRemoteGame[0] ? getIcon(scoreRemoteGame[0]) : defaultIcon}</div>
+            <div>{scoreRemoteGame[1] ? getIcon(scoreRemoteGame[1]) : defaultIcon}</div>
+            <div>{scoreRemoteGame[2] ? getIcon(scoreRemoteGame[2]) : defaultIcon}</div>
+
         </div>
     )
 }

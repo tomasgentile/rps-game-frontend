@@ -3,6 +3,19 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+    animation-timing-function: linear;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
 .actionsContainer {
@@ -15,6 +28,7 @@
 .resultsContainer {
     display: flex;
     justify-content: center;
+
 }
 
 .resultContainer {
@@ -25,6 +39,7 @@
     height: 270px;
     width: 40%;
 }
+
 
 .playerTitle {
     text-align: center;
@@ -71,21 +86,26 @@
     .question {
         font-size: 4rem;
     }
+
     .resultContainer {
         margin: 0px;
     }
+
     .actionsContainer {
         margin-top: 25px;
     }
 }
+
 @media (max-width:450px) {
     .playerTitle {
         font-size: 1.5rem;
     }
+
     .actionsContainer {
         margin-top: 10px;
     }
-    .resultContainer{
+
+    .resultContainer {
         height: 55dvw;
     }
 }
